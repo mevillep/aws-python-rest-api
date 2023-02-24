@@ -14,3 +14,13 @@ functions:
       - http:
           path: /
           method: get
+  getStats:
+    handler: dailyCycle.getStats
+    events:
+      - http:
+          path: /
+          method: get
+
+
+plugins:
+  - serverless-python-requirements
